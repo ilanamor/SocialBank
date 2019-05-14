@@ -181,7 +181,7 @@ export class AppComponent {
 
   openFacebook(username){
     let user = USERS.filter(user => user.Username === username)[0];
-    window.open("https://www.facebook.com/" + user.Facebook);
+    window.open(user.Facebook);
   }
 
   checkIfLogin(){
@@ -248,7 +248,7 @@ export let USERS: User[] = [
     Age: 21,
     Degree: 'SISE',
     Email: 'banuel1997n@gmail.com',
-    Facebook: 'banuel novak',
+    Facebook: 'https://www.facebook.com/banuel.novak',
     ID: '207521113',
     University: 'Ben gurion university',
     rates: [
@@ -284,7 +284,7 @@ export let USERS: User[] = [
     Age: 21,
     Degree: 'SISE',
     Email: 'ronitkisis1997@gmail.com',
-    Facebook: 'ronit kissis',
+    Facebook: 'https://www.facebook.com/ronit.kissis',
     ID: '318551454',
     University: 'Ben gurion university',
     rates: [
@@ -324,7 +324,7 @@ export let USERS: User[] = [
     Age: 24,
     Degree: 'SISE',
     Email: 'edenfi@gmail.com',
-    Facebook: 'eden firouz',
+    Facebook: 'https://www.facebook.com/EdenPiruz',
     ID: '305420366',
     University: 'Ben gurion university',
     rates: [
@@ -360,7 +360,7 @@ export let USERS: User[] = [
     Age: 27,
     Degree: 'SISE',
     Email: 'ilanamord@gmail.com',
-    Facebook: 'ilana.mord',
+    Facebook: 'https://www.facebook.com/ilana.mordechai',
     ID: '203763114',
     University: 'Ben gurion university',
     rates: [
@@ -396,7 +396,7 @@ export let USERS: User[] = [
     Age: 25,
     Degree: 'SISE',
     Email: 'karin@gmail.com',
-    Facebook: 'karin.karin',
+    Facebook: 'https://www.facebook.com/karin.mishor',
     ID: '318551454',
     University: 'Ben gurion university',
     rates: [
