@@ -226,26 +226,30 @@ export interface User {
 
 
 export let offers: Offer[] = [
-  {Username: 'barelsha', Amount: 20, Currency: 'Dollar', Interest: 1},
-  {Username: 'amitd', Amount: 30, Currency: 'NIS', Interest: 2},
-  {Username: 'elirann', Amount: 40, Currency: 'Dollar', Interest: 3}
+  {Username: 'banuel', Amount: 20, Currency: 'Dollar', Interest: 1},
+  {Username: 'ronitki', Amount: 30, Currency: 'NIS', Interest: 2},
+  {Username: 'edenfi', Amount: 40, Currency: 'Dollar', Interest: 1},
+  {Username: 'ilanamord', Amount: 35, Currency: 'NIS', Interest: 2},
+  {Username: 'karin', Amount: 20, Currency: 'Dollar', Interest: 3}
 ];
 
 export let requests: Request[] = [
-  {Username: 'barelsha', Amount: 20, Currency: 'Dollar', Interest: 1},
-  {Username: 'amitd', Amount: 30, Currency: 'NIS', Interest: 2},
-  {Username: 'elirann', Amount: 40, Currency: 'Dollar', Interest: 3}
+  {Username: 'banuel', Amount: 20, Currency: 'Dollar', Interest: 1},
+  {Username: 'ronitki', Amount: 30, Currency: 'NIS', Interest: 2},
+  {Username: 'edenfi', Amount: 40, Currency: 'Dollar', Interest: 1},
+  {Username: 'ilanamord', Amount: 35, Currency: 'NIS', Interest: 2},
+  {Username: 'karin', Amount: 20, Currency: 'Dollar', Interest: 3}
 ];
 
 export let USERS: User[] = [
   {
-    Username: 'barelsha', 
+    Username: 'banuel', 
     Password: '123456',
-    Age: 27,
+    Age: 21,
     Degree: 'SISE',
-    Email: 'barelshahar2@gmail.com',
-    Facebook: 'sbarel1',
-    ID: '305420366',
+    Email: 'banuel1997n@gmail.com',
+    Facebook: 'banuel novak',
+    ID: '207521113',
     University: 'Ben gurion university',
     rates: [
       {
@@ -275,17 +279,17 @@ export let USERS: User[] = [
     ]
   },
   {
-    Username: 'amitd', 
+    Username: 'ronitki', 
     Password: '123456',
-    Age: 27,
+    Age: 21,
     Degree: 'SISE',
-    Email: 'barelshahar2@gmail.com',
-    Facebook: 'amit.dahan.7',
-    ID: '305420366',
+    Email: 'ronitkisis1997@gmail.com',
+    Facebook: 'ronit kissis',
+    ID: '318551454',
     University: 'Ben gurion university',
     rates: [
       {
-        grade: 8, 
+        grade: 9, 
         comment: "good loan, really recomended"
       },
       {
@@ -293,7 +297,7 @@ export let USERS: User[] = [
         comment: "perfect, it was perfect"
       },
       {
-        grade: 9, 
+        grade: 8, 
         comment: "very good, no complaints"
       },
       {
@@ -301,12 +305,12 @@ export let USERS: User[] = [
         comment: "perfect"
       },
       {
-        grade: 6, 
+        grade: 5, 
         comment: "it could be better"
       },
       {
-        grade: 10, 
-        comment: "very good"
+        grade: 6, 
+        comment: "can be better"
       },
       {
         grade: 9, 
@@ -315,12 +319,12 @@ export let USERS: User[] = [
     ]
   },
   {
-    Username: 'elirann', 
+    Username: 'edenfi', 
     Password: '123456',
-    Age: 27,
+    Age: 24,
     Degree: 'SISE',
-    Email: 'barelshahar2@gmail.com',
-    Facebook: 'eliran.nachmani',
+    Email: 'edenfi@gmail.com',
+    Facebook: 'eden firouz',
     ID: '305420366',
     University: 'Ben gurion university',
     rates: [
@@ -329,8 +333,8 @@ export let USERS: User[] = [
         comment: "good loan, really recomended"
       },
       {
-        grade: 10, 
-        comment: "perfect, it was perfect"
+        grade: 7, 
+        comment: "good"
       },
       {
         grade: 9, 
@@ -341,15 +345,91 @@ export let USERS: User[] = [
         comment: "didn't got the money in time"
       },
       {
+        grade: 5, 
+        comment: "can improve"
+      },
+      {
+        grade: 3, 
+        comment: "got the money late"
+      }
+    ]
+  },
+  {
+    Username: 'ilanamord', 
+    Password: '123456',
+    Age: 27,
+    Degree: 'SISE',
+    Email: 'ilanamord@gmail.com',
+    Facebook: 'ilana.mord',
+    ID: '203763114',
+    University: 'Ben gurion university',
+    rates: [
+      {
+        grade: 8, 
+        comment: "good loan, really recomended"
+      },
+      {
+        grade: 7, 
+        comment: "good"
+      },
+      {
+        grade: 9, 
+        comment: "very good, no complaints"
+      },
+      {
+        grade: 2, 
+        comment: "didn't got the money in time"
+      },
+      {
+        grade: 5, 
+        comment: "can improve"
+      },
+      {
+        grade: 3, 
+        comment: "got the money late"
+      }
+    ]
+  },
+  {
+    Username: 'karin', 
+    Password: '123456',
+    Age: 25,
+    Degree: 'SISE',
+    Email: 'karin@gmail.com',
+    Facebook: 'karin.karin',
+    ID: '318551454',
+    University: 'Ben gurion university',
+    rates: [
+      {
+        grade: 9, 
+        comment: "good loan, really recomended"
+      },
+      {
         grade: 10, 
-        comment: "very good"
+        comment: "perfect, it was perfect"
+      },
+      {
+        grade: 8, 
+        comment: "very good, no complaints"
+      },
+      {
+        grade: 10, 
+        comment: "perfect"
+      },
+      {
+        grade: 5, 
+        comment: "it could be better"
+      },
+      {
+        grade: 6, 
+        comment: "can be better"
       },
       {
         grade: 9, 
         comment: "perfect"
       }
     ]
-  }
+  },
 ];
 
 
