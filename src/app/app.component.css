@@ -1,6 +1,10 @@
 
 table.mat-table{
-    width: 100%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+    
 }
 
 img{
@@ -11,6 +15,7 @@ img{
 .menu{
     z-index: 2;
     position: fixed;
+    background-color: dimgray;
 }
 
 
@@ -21,21 +26,25 @@ img{
 
 .home{
     padding: 3px;
+    
 }
 
 
 @media (max-width: 600px){
     .mat-toolbar-row, .mat-toolbar-single-row {
         height: 64px; 
+        
     }
 }
 
 .space{
     height: 50px;
+    
 }
 
 .footer{
     font-size: 14px;
+    background-color: dimgray;
 }
 
 
