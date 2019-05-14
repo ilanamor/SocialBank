@@ -1,0 +1,26 @@
+
+<div class="dialog-header" mat-dialog-title>
+  <p mat-line>Sign In</p>
+  <div class="flex-spacer"></div>
+  <mat-icon class="exit-icon" (click)="onNoClick()">cancel</mat-icon>
+</div>
+<mat-divider></mat-divider>
+
+<form [formGroup]="signinForm" mat-dialog-content>
+    <div class="inputs-container">
+      <mat-form-field>
+        <input required matInput formControlName="Username" placeholder="Username">
+        <mat-error *ngIf="signinForm.controls.Username.invalid">{{getUsernameErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input required matInput formControlName="Password" placeholder="Password">
+        <mat-error *ngIf="signinForm.controls.Password.invalid">{{getUsernameErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+</form>
+<mat-error *ngIf="loginError.length > 0">{{loginError}}</mat-error>
+<mat-divider></mat-divider>
+<div mat-dialog-actions>
+  <button [disabled]="checkFormStatus()" class="save-button" mat-button (click)="onSubmit()">Sign In</button>
+</div>
+ 

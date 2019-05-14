@@ -1,0 +1,30 @@
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs-container > *{
+    width: 100%;
+}
+
+.exit-icon:hover{
+    cursor: pointer !important;
+}
+
+.mat-dialog-content{
+    padding: 24px 24px;
+}
+
+.mat-checkbox-layout{
+    padding-top: 10px;
+}
+
+
+.mat-dialog-actions{
+    flex-direction: row-reverse;
+}

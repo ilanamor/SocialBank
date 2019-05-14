@@ -1,0 +1,20 @@
+<div class="dialog-header" mat-dialog-title>
+    <p mat-line>{{data.Username}} reviews (avg: {{getAverage() | number}})</p>
+    <div class="flex-spacer"></div>
+    <mat-icon class="exit-icon" (click)="onNoClick()">cancel</mat-icon>
+  </div>
+  <mat-divider></mat-divider>
+  
+  <mat-list mat-dialog-content>
+    <h3 mat-subheader>Reviews</h3>
+    <mat-list-item *ngFor="let rate of data.rates">
+      <mat-icon mat-list-icon>comment</mat-icon>
+      <h4 mat-line>{{rate.grade}} <ngb-rating [rate]="rate.grade"></ngb-rating></h4>
+      <p mat-line></p>
+      <p mat-line> {{rate.comment}} </p>
+    </mat-list-item>
+  </mat-list>
+  <!-- <mat-divider></mat-divider>
+  <div mat-dialog-actions>
+    <button [disabled]="checkFormStatus()" class="save-button" mat-button (click)="onSubmit()">Rate</button>
+  </div> -->

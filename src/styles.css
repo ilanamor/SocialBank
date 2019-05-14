@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+  
+.add-offer{
+  margin-left: 10px !important;
+}
+
+.sr-only{
+  opacity: 0 !important;
+}
+
+.mat-toolbar.mat-primary{
+  font-size: 15px;
+}
+
+.mat-icon{
+  font-size: 20px;
+}
+

@@ -1,0 +1,27 @@
+<div class="dialog-header" mat-dialog-title>
+  <p mat-line>Rate</p>
+  <div class="flex-spacer"></div>
+  <mat-icon class="exit-icon" (click)="onNoClick()">cancel</mat-icon>
+</div>
+<mat-divider></mat-divider>
+
+<form [formGroup]="rateForm" mat-dialog-content>
+    <ngb-rating [(rate)]="currentRate">
+      <ng-template let-fill="fill" let-index="index">
+        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+      </ng-template>
+    </ngb-rating>
+    <hr>
+    <pre>Current rate: <b>{{currentRate | number}}</b></pre>
+    <div class="inputs-container">
+      <mat-form-field>
+        <textarea required matInput formControlName="Comment" placeholder="Leave a comment"></textarea>
+        <mat-error *ngIf="rateForm.controls.Comment.invalid">{{getCommentErrorMessage()}}</mat-error>
+      </mat-form-field>
+      
+    </div>
+</form>
+<mat-divider></mat-divider>
+<div mat-dialog-actions>
+  <button [disabled]="checkFormStatus()" class="save-button" mat-button (click)="onSubmit()">Rate</button>
+</div>

@@ -1,0 +1,8 @@
+
+.exit-icon:hover{
+    cursor: pointer !important;
+}
+
+.dialog-header{
+    display: flex;
+}

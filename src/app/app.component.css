@@ -1,0 +1,54 @@
+
+table.mat-table{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+}
+
+.menu{
+    z-index: 2;
+    position: fixed;
+}
+
+
+.logo{
+    width: 100px;
+    height: 50px;
+}
+
+.home{
+    padding: 3px;
+}
+
+
+@media (max-width: 600px){
+    .mat-toolbar-row, .mat-toolbar-single-row {
+        height: 64px; 
+    }
+}
+
+.space{
+    height: 50px;
+}
+
+.footer{
+    font-size: 14px;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

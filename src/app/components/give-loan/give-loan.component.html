@@ -1,0 +1,24 @@
+
+<div class="dialog-header" mat-dialog-title>
+    <p mat-line>Are you sure you want to give loan to {{data.Username}}?</p>
+  <div class="flex-spacer"></div>
+  <mat-icon class="exit-icon" (click)="onNoClick()">cancel</mat-icon>
+</div>
+<mat-divider></mat-divider>
+
+<div mat-dialog-content>
+    <h5 class="aa" mat-line>Loan details: </h5>
+    <p class="aa" mat-line>Amount: {{data.Amount}} </p>
+    <p class="aa" mat-line>Currency: {{data.Currency}} </p>
+    <p  class="aa" mat-line>Interest: {{data.Interest}}% </p>
+</div>
+
+<mat-divider></mat-divider>
+<div mat-dialog-actions>
+  <button mat-button (click)="onSubmit()">Give loan</button>
+</div>
+
+
+  
+  
+ 
