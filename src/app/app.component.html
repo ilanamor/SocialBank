@@ -14,10 +14,10 @@
 </mat-toolbar>
 
 
-<img src="../assets/pic.jpeg" style="width:70%; left:12%; position: relative;" alt="" >
+<img src="../assets/pic.jpeg" style="width:70%; left:15%; position: relative;" alt="" >
 
-<mat-toolbar>Offered Loans
-    <button *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddOfferDialog()">Add offer</button>
+<mat-toolbar style="position:relative; left:15%; width:70%">Offered Loans 
+    <button  *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddOfferDialog()">Add offer</button>
 </mat-toolbar>
 
 <table 
@@ -77,7 +77,7 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<mat-toolbar>Requested Loans
+<mat-toolbar style="position:relative; left:15%; width:70%">Requested Loans
     <button *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddRequestDialog()">Add request</button>
 </mat-toolbar>
 
