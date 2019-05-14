@@ -1,6 +1,7 @@
 
 table.mat-table{
     width: 100%;
+    
 }
 
 img{
@@ -11,6 +12,7 @@ img{
 .menu{
     z-index: 2;
     position: fixed;
+    background-color: dimgray;
 }
 
 
@@ -36,6 +38,7 @@ img{
 
 .footer{
     font-size: 14px;
+    background-color: dimgray;
 }
 
 
