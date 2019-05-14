@@ -1,14 +1,17 @@
 
-<mat-toolbar  class="menu">
+<mat-toolbar  class="menu" >
   <mat-toolbar-row >
     <!-- <img src="../assets/logo.jpeg" alt=""> -->
     <!-- <button mat-button><img class="logo" src="../assets/logo.png" alt=""></button> -->
+    <button mat-button (click)="signOut()" style="color:aliceblue">התנתקות</button>
+    <button mat-button (click)="openAboutDialog()"  style="color:aliceblue">אודות</button>
+    <button mat-button (click)="openSignupDialog()" style="color:aliceblue">הרשמה</button>
+    <button mat-button (click)="openSigninDialog()" style="color:aliceblue">כניסה</button>
+    <button mat-button style="color:aliceblue"><mat-icon class="home" style="color:aliceblue">home</mat-icon>בית</button>
     <button mat-button style="color:aliceblue"><b>SOCIAL BANK</b></button>
-    <button mat-button style="color:aliceblue"><mat-icon class="home" style="color:aliceblue">home</mat-icon>Home</button>
-    <button mat-button (click)="openSigninDialog()" style="color:aliceblue">Sign In</button>
-    <button mat-button (click)="openSignupDialog()" style="color:aliceblue">Sign Up</button>
-    <button mat-button (click)="openAboutDialog()"  style="color:aliceblue">About</button>
-    <button mat-button (click)="signOut()" style="color:aliceblue">Sign Out</button>
+  
+    
+    
     <!-- <button mat-button><mat-icon>mail_outline</mat-icon>Contact Us</button> -->
   </mat-toolbar-row>
 </mat-toolbar>
