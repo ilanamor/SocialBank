@@ -17,7 +17,7 @@
 <img src="../assets/pic.jpeg" style="width:70%; left:15%; position: relative;" alt="" >
 
 <mat-toolbar style="position:relative; left:15%; width:70%">Offered Loans 
-    <button  *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddOfferDialog()">Add offer</button>
+    <button  *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddOfferDialog()" style="border:2px solid  green">Add offer</button>
 </mat-toolbar>
 
 <table 
@@ -50,14 +50,14 @@
 
   <ng-container matColumnDef="button">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
-    <td mat-cell *matCellDef="let element; let i = index;"> <button *ngIf="loggedInUser" (click)="openTakeLoanDialog(element, i)"  mat-button>Take loan!</button></td>
+    <td mat-cell *matCellDef="let element; let i = index;"> <button *ngIf="loggedInUser" (click)="openTakeLoanDialog(element, i)" style="background-color:#5b8129"  mat-button>Take loan!</button></td>
   </ng-container>
   
 
   <ng-container matColumnDef="rate">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
     <td mat-cell *matCellDef="let element"> 
-        <button *ngIf="loggedInUser"  mat-button  (click)="openRate(element.Username)"> Rate </button>
+        <button *ngIf="loggedInUser"  mat-button  (click)="openRate(element.Username)" style="background-color:#d9ff00"> Rate </button>
     </td>
   </ng-container>
 
@@ -78,7 +78,7 @@
 </table>
 
 <mat-toolbar style="position:relative; left:15%; width:70%">Requested Loans
-    <button *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddRequestDialog()">Add request</button>
+    <button *ngIf="loggedInUser" mat-button class="add-offer" (click)="openAddRequestDialog()" style="border:2px solid  green">Add request</button>
 </mat-toolbar>
 
 <table 
@@ -116,13 +116,13 @@
 
   <ng-container matColumnDef="button">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
-    <td mat-cell *matCellDef="let element;  let i = index;"> <button *ngIf="loggedInUser" (click)="openGiveLoanDialog(element, i)"  mat-button> Give loan! </button></td>
+    <td mat-cell *matCellDef="let element;  let i = index;"> <button *ngIf="loggedInUser" (click)="openGiveLoanDialog(element, i)" style="background-color:#5b8129" mat-button> Give loan! </button></td>
   </ng-container>
 
   <ng-container matColumnDef="rate">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
     <td mat-cell *matCellDef="let element"> 
-        <button *ngIf="loggedInUser"  mat-button (click)="openRate(element.Username)"> Rate </button>
+        <button *ngIf="loggedInUser"  mat-button (click)="openRate(element.Username)" style="background-color:#d9ff00"> Rate </button>
     </td>
   </ng-container>
 
@@ -142,5 +142,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<mat-toolbar></mat-toolbar>
-<mat-toolbar class="footer" style="color:aliceblue"><mat-icon>copyright</mat-icon><pre> </pre> <b>Ronit Kissis | Banuel Dogayman | Eden Firouz | Ilana *** | Karin ***</b></mat-toolbar>
+<mat-toolbar class="footer" style="color:aliceblue"><mat-icon>copyright</mat-icon><pre> </pre> <b>Ronit Kissis | Banuel Dogayman | Eden Firouz | Ilana Mordechai | Karin Mishor</b></mat-toolbar>
