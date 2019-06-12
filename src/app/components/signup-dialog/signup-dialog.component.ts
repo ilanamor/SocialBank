@@ -67,10 +67,9 @@ export class SignupDialogComponent implements OnInit {
     this.signupForm.controls.Email.hasError('email') ? 'The email you entered is invalid' : '';
   }
 
-  
 
   getUsernameErrorMessage(){
-    return this.signupForm.controls.Username.hasError('required') ? 'You must enter your last name' : '';
+    return this.signupForm.controls.Username.hasError('required') ? 'You must enter a value' : '';
   }
 
   checkFormStatus(){

@@ -81,7 +81,7 @@ export class SigninDialogComponent implements OnInit {
   
 
   getUsernameErrorMessage(){
-    return this.signinForm.controls.Username.hasError('required') ? 'You must enter your last name' : '';
+    return this.signinForm.controls.Username.hasError('required') ? 'You must enter a value' : '';
   }
 
   checkFormStatus(){

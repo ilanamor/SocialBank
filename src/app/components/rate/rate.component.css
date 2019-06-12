@@ -1,15 +1,15 @@
 .star {
     font-size: 1.5rem;
-    color: #b0deb6ce;
+    color: rgb(211, 211, 145);
   }
   .filled {
-    color: #0eaf4c;
+    color: yellow;
   }
   .bad {
-    color: #deb0b0;
+    color: rgb(211, 211, 145);
   }
   .filled.bad {
-    color: #ff1e1e;
+    color: yellow;
   }
 
   .inputs-container{
